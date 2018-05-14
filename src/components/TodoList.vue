@@ -147,6 +147,7 @@ methods: {
         const auth = authJS;
         auth.signOut();
         this.logged = false;
+        this.gifUrl = '';
     },
     fileUp(event, key){
             let urlUp = '';
