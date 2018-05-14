@@ -106,7 +106,7 @@ methods: {
     setCompleted (key, statusCompleted){
         todosRef.child(key).update({ completed: statusCompleted });
         if (statusCompleted){
-            $.getJSON('http://api.giphy.com/v1/gifs/random?&api_key=Qkp6Q5KeA8sHbBV8U7nJdeQYPrOZOhTB', this.gotData);
+            $.getJSON('https://api.giphy.com/v1/gifs/random?&api_key=Qkp6Q5KeA8sHbBV8U7nJdeQYPrOZOhTB', this.gotData);
         }
     },
     gotData(data){
